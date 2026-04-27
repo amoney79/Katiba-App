@@ -1,0 +1,5 @@
+# MongoDB Atlas config template — copy this to config.properties and fill in your URI
+# config.properties is gitignored to protect your credentials.
+
+mongodb.uri=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/?retryWrites=true&w=majority
+mongodb.database=katiba
