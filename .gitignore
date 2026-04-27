@@ -1,0 +1,17 @@
+# Maven build output
+target/
+
+# IDE files
+.idea/
+*.iml
+*.classpath
+*.project
+.settings/
+.vscode/
+
+# ⚠️  MongoDB credentials — NEVER commit your real URI
+src/main/resources/app/config.properties
+
+# OS
+.DS_Store
+Thumbs.db
