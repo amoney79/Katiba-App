@@ -1,0 +1,334 @@
+/* ══════════════════════════════════════════════════════════════
+   KATIBA APP — Main Stylesheet
+   Kenyan-inspired dark theme: forest green + crimson on near-black
+   ══════════════════════════════════════════════════════════════ */
+
+/* ─── Google Font import ──────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ─── Root / Global ───────────────────────────────────────────── */
+.root {
+    -fx-font-family: 'Inter', 'Segoe UI', sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: #0e0e17;
+}
+
+/* ─── Sidebar ─────────────────────────────────────────────────── */
+.sidebar {
+    -fx-background-color: #13121f;
+    -fx-border-color: #1e1d30;
+    -fx-border-width: 0 1 0 0;
+    -fx-pref-width: 220px;
+}
+
+.sidebar-logo-box {
+    -fx-padding: 28 20 20 20;
+    -fx-border-color: #1e1d30;
+    -fx-border-width: 0 0 1 0;
+}
+
+.sidebar-logo {
+    -fx-font-size: 22px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #00c853;
+    -fx-letter-spacing: 4px;
+}
+
+.sidebar-sub {
+    -fx-font-size: 11px;
+    -fx-text-fill: #5a586e;
+}
+
+.sidebar-footer {
+    -fx-font-size: 10px;
+    -fx-text-fill: #3a3850;
+    -fx-padding: 0 0 16 20;
+}
+
+/* ─── Nav Buttons ─────────────────────────────────────────────── */
+.nav-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #8884a8;
+    -fx-font-size: 13px;
+    -fx-padding: 10 16 10 16;
+    -fx-alignment: CENTER_LEFT;
+    -fx-cursor: hand;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+}
+
+.nav-btn:hover {
+    -fx-background-color: #1e1d30;
+    -fx-text-fill: #e0deff;
+}
+
+.nav-active {
+    -fx-background-color: #00c85320;
+    -fx-text-fill: #00c853;
+    -fx-font-weight: 600;
+}
+
+/* ─── Content Pane ────────────────────────────────────────────── */
+.content-pane {
+    -fx-background-color: #0e0e17;
+}
+
+/* ─── Page Header ─────────────────────────────────────────────── */
+.page-header {
+    -fx-background-color: #13121f;
+    -fx-padding: 28 32 20 32;
+    -fx-border-color: #1e1d30;
+    -fx-border-width: 0 0 1 0;
+}
+
+.page-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #eeeeff;
+}
+
+.page-subtitle {
+    -fx-font-size: 13px;
+    -fx-text-fill: #5a586e;
+}
+
+/* ─── Chapter Cards ───────────────────────────────────────────── */
+.chapter-grid {
+    -fx-padding: 24;
+    -fx-background-color: #0e0e17;
+}
+
+.chapter-card {
+    -fx-background-color: #13121f;
+    -fx-border-color: #1e1d30;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-padding: 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #00000066, 8, 0, 0, 2);
+}
+
+.chapter-card:hover {
+    -fx-border-color: #00c85355;
+    -fx-background-color: #171629;
+    -fx-effect: dropshadow(gaussian, #00c85322, 16, 0, 0, 4);
+}
+
+.card-chapter-num {
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #00c853;
+    -fx-letter-spacing: 1px;
+}
+
+.card-chapter-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #d0ceee;
+    -fx-wrap-text: true;
+}
+
+.card-btn {
+    -fx-background-color: #00c85318;
+    -fx-text-fill: #00c853;
+    -fx-font-size: 12px;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-cursor: hand;
+    -fx-padding: 6 12 6 12;
+}
+.card-btn:hover {
+    -fx-background-color: #00c85330;
+}
+
+/* ─── Article Rows ────────────────────────────────────────────── */
+.article-row {
+    -fx-background-color: #13121f;
+    -fx-padding: 14 20 14 20;
+    -fx-background-radius: 8;
+    -fx-border-color: #1e1d30;
+    -fx-border-radius: 8;
+}
+
+.article-row:hover {
+    -fx-background-color: #171629;
+    -fx-border-color: #2e2d48;
+}
+
+.article-num {
+    -fx-font-size: 18px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #2a2848;
+    -fx-min-width: 40px;
+}
+
+.article-row-title {
+    -fx-font-size: 14px;
+    -fx-text-fill: #c8c6e8;
+}
+
+.read-btn {
+    -fx-background-color: #1a1930;
+    -fx-text-fill: #8884a8;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+    -fx-padding: 6 14 6 14;
+    -fx-font-size: 12px;
+}
+.read-btn:hover {
+    -fx-background-color: #00c85318;
+    -fx-text-fill: #00c853;
+}
+
+/* ─── Search ──────────────────────────────────────────────────── */
+.search-field {
+    -fx-background-color: #1a1930;
+    -fx-text-fill: #e0deff;
+    -fx-prompt-text-fill: #4a4860;
+    -fx-border-color: #2e2d48;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 10 14 10 14;
+    -fx-font-size: 14px;
+}
+.search-field:focused {
+    -fx-border-color: #00c853;
+}
+
+.result-count {
+    -fx-font-size: 12px;
+    -fx-text-fill: #5a586e;
+}
+
+.result-card {
+    -fx-background-color: #13121f;
+    -fx-border-color: #1e1d30;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 18 20 18 20;
+}
+.result-card:hover {
+    -fx-border-color: #2e2d48;
+}
+
+.result-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #dddcff;
+}
+
+.result-snippet {
+    -fx-font-size: 12px;
+    -fx-text-fill: #5a586e;
+}
+
+/* ─── Article Detail ──────────────────────────────────────────── */
+.detail-topbar {
+    -fx-padding: 0 0 12 0;
+}
+
+.article-title {
+    -fx-font-size: 26px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #eeeeff;
+}
+
+.article-content {
+    -fx-font-size: 15px;
+    -fx-text-fill: #b0aece;
+    -fx-line-spacing: 6;
+}
+
+.bookmark-btn {
+    -fx-background-color: #1a1930;
+    -fx-text-fill: #8884a8;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-padding: 8 20 8 20;
+    -fx-font-size: 13px;
+}
+.bookmark-btn:hover {
+    -fx-background-color: #ffd70022;
+    -fx-text-fill: #ffd700;
+}
+.bookmarked {
+    -fx-background-color: #ffd70022;
+    -fx-text-fill: #ffd700;
+}
+
+/* ─── Buttons ─────────────────────────────────────────────────── */
+.primary-btn {
+    -fx-background-color: #00c853;
+    -fx-text-fill: #000000;
+    -fx-font-weight: 700;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-padding: 10 22 10 22;
+}
+.primary-btn:hover {
+    -fx-background-color: #00e676;
+}
+
+.secondary-btn {
+    -fx-background-color: #1e1d30;
+    -fx-text-fill: #8884a8;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+    -fx-padding: 6 14 6 14;
+}
+.secondary-btn:hover {
+    -fx-background-color: #2e2d48;
+    -fx-text-fill: #e0deff;
+}
+
+.danger-btn {
+    -fx-background-color: #bb000020;
+    -fx-text-fill: #ff4444;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+    -fx-padding: 6 14 6 14;
+    -fx-font-size: 12px;
+}
+.danger-btn:hover {
+    -fx-background-color: #bb000040;
+}
+
+.back-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #5a586e;
+    -fx-cursor: hand;
+    -fx-padding: 6 0 6 0;
+    -fx-font-size: 13px;
+}
+.back-btn:hover {
+    -fx-text-fill: #00c853;
+}
+
+/* ─── Misc ────────────────────────────────────────────────────── */
+.section-heading {
+    -fx-font-size: 18px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #c0bede;
+    -fx-padding: 4 0 4 0;
+}
+
+.empty-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #3a3850;
+    -fx-padding: 40 0 0 0;
+}
+
+.scroll-pane {
+    -fx-background-color: #0e0e17;
+    -fx-background: #0e0e17;
+}
+.scroll-pane .viewport {
+    -fx-background-color: #0e0e17;
+}
+.scroll-pane .scroll-bar {
+    -fx-background-color: #13121f;
+}
+.scroll-pane .scroll-bar .thumb {
+    -fx-background-color: #2e2d48;
+    -fx-background-radius: 4;
+}
